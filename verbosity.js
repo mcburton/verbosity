@@ -7,11 +7,13 @@ $(function () {
     $("#editor").hide();
     $("#preview").hide();
     $("#edit").show();
+    $("#controls").hide();
   } else {
     $("#nav").hide();
     $("#edit").hide();
     $("#message").hide();
     $("#editor").show();
+
   }
   if (location.protocol.indexOf("http") != -1) {
     host = location.protocol + "//" + location.host + location.pathname + "?";
